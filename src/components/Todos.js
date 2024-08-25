@@ -17,8 +17,21 @@ function Todos() {
           >
             <div className="text-white  ">{todo.text}</div>
             <button onClick={() => dispatch(removeTodo(todo.id))}>
-              <svg height="20" width="20" xmlns="http://www.w3.org/2000/svg">
-                <circle r="8" cx="10" cy="10" fill="red" />
+              <svg
+                height="20"
+                width="20"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="red"
+                strokeWidth="2"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+              >
+                <polyline points="3 6 5 6 21 6" />
+                <path d="M19 6l-2 14H7L5 6" />
+                <path d="M10 11v6" />
+                <path d="M14 11v6" />
+                <path d="M5 6l1-4h12l1 4" />
               </svg>
             </button>
           </li>
